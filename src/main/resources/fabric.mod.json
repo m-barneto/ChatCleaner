@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "chatcleaner",
+  "version": "${version}",
+  "name": "ChatCleaner",
+  "description": "Filter chat messages based on regex.",
+  "authors": [
+    "Mattdokn"
+  ],
+  "contact": {},
+  "license": "GPL-3.0 License",
+  "icon": "assets/chatcleaner/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.mattdokn.chatcleaner.ChatCleaner"
+    ],
+    "modmenu": [
+      "me.mattdokn.chatcleaner.config.ChatCleanerConfig"
+    ]
+  },
+  "mixins": [
+    "ChatCleaner.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  },
+  "suggests": {
+        "clothconfig": "*",
+		"modmenu": "*"
+  }
+}
