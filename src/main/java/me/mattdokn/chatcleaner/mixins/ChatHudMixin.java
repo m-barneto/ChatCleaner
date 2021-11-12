@@ -15,13 +15,14 @@ import java.util.regex.Pattern;
 public class ChatHudMixin {
     @Inject(method = "addMessage(Lnet/minecraft/text/Text;)V", at = @At("HEAD"), cancellable = true)
     private void addMessage(Text text, CallbackInfo info) {
-        String json = text.toString();
+        String json = text.getString();
         if (ModConfig.INSTANCE.ignoreRegex.length() > 0 && ChatCleaner.ignoreRegex.matcher(json).find()) {
             return;
         }
         for (Pattern p : ChatCleaner.regexes) {
             if (p.matcher(json).find()) {
                 info.cancel();
+                return;
             }
         }
     }

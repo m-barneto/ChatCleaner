@@ -16,7 +16,7 @@ public class ChatCleanerConfig implements ModMenuApi {
     public static ArrayList<String> defaultRegexes = new ArrayList<>(
             Arrays.asList(
                     "(\\/chestsort)",
-                    "(For a list of commands)",
+                    "(For the list of commands)",
                     "(\\/commands)",
                     "(Enable\\/Disable your auto tree)",
                     "(\\/tree toggle)",

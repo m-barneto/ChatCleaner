@@ -14,7 +14,7 @@ import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 import me.mattdokn.chatcleaner.ChatCleaner;
 
-// Stolen from https://github.com/zabi94/NBTTooltip/blob/7c3e38adbf8d5b2e018202de6a6c50f37ddca3e2/src/main/java/zabi/minecraft/nbttooltip/config/ModConfig.java
+// Based on (copy pasted) from https://github.com/zabi94/NBTTooltip/blob/7c3e38adbf8d5b2e018202de6a6c50f37ddca3e2/src/main/java/zabi/minecraft/nbttooltip/config/ModConfig.java
 public class ModConfig {
     private static final File folder = new File("config");
     private static File configFile;
